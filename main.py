@@ -9,6 +9,10 @@ from actions.action_tablesData import AppTablesData
 from actions.action_fct_fournie_1 import AppFctFournie1
 from actions.action_fct_fournie_2 import AppFctFournie2
 from actions.action_fct_comp_1 import AppFctComp1
+from actions.action_fct_comp_11 import AppFctComp11
+#from actions.action_fct_comp_12 import AppFctComp12
+#from actions.action_fct_comp_13 import AppFctComp13
+#from actions.action_fct_comp_14 import AppFctComp14
 from actions.action_fct_comp_2 import AppFctComp2
 from actions.action_fct_comp_3 import AppFctComp3
 from actions.action_fct_comp_4 import AppFctComp4
@@ -19,14 +23,18 @@ class AppWindow(QMainWindow):
     # Création d'un signal destiné à être émis lorsque la table est modifiée
     changedValue = pyqtSignal()
 
-    # TODO 2 : ajouter les fenetres (répertoire gui) et les actions (répertoire actions) correspondant aux 2 items de la partie 2.
-    # TODO 3 : ajouter les fenetres (rep. gui) et les actions (rep. actions) correspondant aux 2 items de la partie 3.
+    # TODO 2 : ajouter les fenetres (répertoire gui) et les actions (répertoire actions) correspondant aux 2 items de
+    #  la partie 2. TODO 3 : ajouter les fenetres (rep. gui) et les actions (rep. actions) correspondant aux 2 items
+    #   de la partie 3.
 
     # On prévoit des variables pour accueillir les fenêtres supplémentaires
     tablesDataDialog = None
     fct_fournie_1_dialog = None
     fct_fournie_2_dialog = None
     fct_comp_1_dialog = None
+    fct_comp_11_dialog = None
+    fct_comp_12_dialog = None
+    fct_comp_13_dialog = None
     fct_comp_2_dialog = None
     fct_comp_3_dialog = None
     fct_comp_4_dialog = None
@@ -138,6 +146,13 @@ class AppWindow(QMainWindow):
         self.fct_comp_1_dialog.show()
         self.changedValue.connect(self.fct_comp_1_dialog.refreshResult)
 
+    def open_fct_comp_11(self):
+        if self.fct_comp_11_dialog is not None:
+            self.fct_comp_11_dialog.close()
+        self.fct_comp_11_dialog = AppFctComp11(self.data)
+        self.fct_comp_11_dialog.show()
+        self.changedValue.connect(self.fct_comp_11_dialog.refreshResult)
+
     # En cas de clic sur la fonction à compléter 2
     def open_fct_comp_2(self):
         if self.fct_comp_2_dialog is not None:
@@ -179,6 +194,14 @@ class AppWindow(QMainWindow):
             self.fct_fournie_2_dialog.close()
         if (self.fct_comp_1_dialog is not None):
             self.fct_comp_1_dialog.close()
+        if (self.fct_comp_11_dialog is not None):
+            self.fct_comp_11_dialog.close()
+        if (self.fct_comp_12_dialog is not None):
+            self.fct_comp_12_dialog.close()
+        if (self.fct_comp_13_dialog is not None):
+            self.fct_comp_13_dialog.close()
+        if (self.fct_comp_14_dialog is not None):
+            self.fct_comp_14_dialog.close()
         if (self.fct_comp_2_dialog is not None):
             self.fct_comp_2_dialog.close()
         if (self.fct_comp_3_dialog is not None):
