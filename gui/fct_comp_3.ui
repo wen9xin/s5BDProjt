@@ -6,39 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>378</height>
+    <width>957</width>
+    <height>665</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Liste des épreuves d'une catégorie (version 2, catégories extraites de la BD)</string>
+   <string>Liste des épreuves d'une catégorie (version 1, catégories fixées par interface)</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Saisissez une catégorie :</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_fct_comp_3"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Valider</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="1" column="0">
+  <property name="windowOpacity">
+   <double>9.000000000000000</double>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Travail à réaliser : améliorer l'interface afin de proposer une liste des catégories possibles (issues de la base de données).</string>
+      <string>Travail à réaliser : améliorer l'interface afin de proposer une liste des catégories possibles (saisies en dur dans l'interface).</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -48,7 +30,28 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="0">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Saisissez une catégorie :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_comp_3"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_fct_comp_3">
+       <property name="text">
+        <string>Valider</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
     <widget class="QTableWidget" name="table_fct_comp_3">
      <attribute name="horizontalHeaderMinimumSectionSize">
       <number>50</number>
@@ -91,7 +94,7 @@
      </column>
     </widget>
    </item>
-   <item row="3" column="0">
+   <item>
     <widget class="QLabel" name="label_fct_comp_3">
      <property name="text">
       <string/>
@@ -106,18 +109,18 @@
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton</sender>
+   <sender>pushButton_fct_comp_3</sender>
    <signal>clicked()</signal>
    <receiver>fct_comp_3</receiver>
    <slot>refreshResult()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>364</x>
-     <y>52</y>
+     <x>946</x>
+     <y>50</y>
     </hint>
     <hint type="destinationlabel">
      <x>444</x>
-     <y>81</y>
+     <y>134</y>
     </hint>
    </hints>
   </connection>

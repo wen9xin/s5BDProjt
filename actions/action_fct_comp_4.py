@@ -14,6 +14,7 @@ class AppFctComp4(QDialog):
         self.ui = uic.loadUi("gui/fct_comp_4.ui", self)
         self.data = data
         self.refreshCatList()
+        #self.refreshCatList2()
 
     # Fonction de mise à jour de l'affichage
     def refreshResult(self):
@@ -23,7 +24,7 @@ class AppFctComp4(QDialog):
             cursor = self.data.cursor()
             result = cursor.execute(
                 "SELECT numSp, nomSp, prenomSp, categorieSp, dateNaisSp FROM LesSportifs_base JOIN LesEquipiers USING (numSp) WHERE pays = ? AND numEq=?",
-                [self.ui.comboBox_fct_4_pays.currentText(),self.ui.spinBox_fct_4_equipe.text().strip()]
+                [self.ui.comboBox_fct_4_pays.currentText(),self.ui.comboBox_fct_4_equipe.currentText()]
             )
         except Exception as e:
             self.ui.table_fct_comp_4.setRowCount(0)
@@ -32,6 +33,19 @@ class AppFctComp4(QDialog):
             i = display.refreshGenericData(self.ui.table_fct_comp_4, result)
             if i == 0:
                 display.refreshLabel(self.ui.label_fct_comp_4, "Aucun résultat")
+
+    def refreshCatList2(self):
+        display.refreshLabel(self.ui.label_fct_comp_4, "Choisir le equipe")
+        try:
+            cursor = self.data.cursor()
+            result = cursor.execute(
+                "SELECT DISTINCT E.numEq FROM LesSportifs_base S LEFT OUTER JOIN LesEquipiers E ON S.numSp=E.numSp WHERE pays=?",
+                [self.ui.comboBox_fct_4_pays.currentText()]
+            )
+        except Exception as e:
+            self.ui.comboBox_fct_4_equipe.clear()
+        else:
+            display.refreshGenericCombo(self.ui.comboBox_fct_4_equipe, result)
 
     # Fonction de mise à jour des catégories
     @pyqtSlot()
@@ -44,3 +58,5 @@ class AppFctComp4(QDialog):
             self.ui.comboBox_fct_4_pays.clear()
         else:
             display.refreshGenericCombo(self.ui.comboBox_fct_4_pays, result)
+
+

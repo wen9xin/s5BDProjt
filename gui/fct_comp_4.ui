@@ -39,6 +39,13 @@
      <item>
       <widget class="QComboBox" name="comboBox_fct_4_pays"/>
      </item>
+     <item>
+      <widget class="QPushButton" name="reFresh2">
+       <property name="text">
+        <string>Afficher Equipe</string>
+       </property>
+      </widget>
+     </item>
      <item alignment="Qt::AlignHCenter">
       <widget class="QLabel" name="label_2">
        <property name="text">
@@ -47,7 +54,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QSpinBox" name="spinBox_fct_4_equipe"/>
+      <widget class="QComboBox" name="comboBox_fct_4_equipe"/>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_fct_4">
@@ -129,8 +136,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>reFresh2</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_comp_4</receiver>
+   <slot>refreshCatList2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>refreshResult()</slot>
+  <slot>refreshCatList2()</slot>
  </slots>
 </ui>
