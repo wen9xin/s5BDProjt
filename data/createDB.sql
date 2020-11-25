@@ -70,7 +70,7 @@ SELECT  numSp,nomSp,prenomSp,pays,categorieSp,dateNaisSp,(strftime('%Y', 'now') 
 FROM LesSportifs_base;
 
 CREATE VIEW LesEquipes AS
-SELECT numEp,COUNT(numSp)as nbEquipiers
+SELECT numEq, COUNT(numSp) as num
 FROM LesEquipiers
 GROUP BY numEp;
 
