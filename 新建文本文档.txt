@@ -1,0 +1,20 @@
+    def open_fct_comp_12(self):
+        if self.fct_comp_12_dialog is not None:
+            self.fct_comp_12_dialog.close()
+        self.fct_comp_12_dialog = AppFctComp12(self.data)
+        self.fct_comp_12_dialog.show()
+        self.changedValue.connect(self.fct_comp_12_dialog.refreshResult)
+
+    def open_fct_comp_13(self):
+        if self.fct_comp_13_dialog is not None:
+            self.fct_comp_13_dialog.close()
+        self.fct_comp_13_dialog = AppFctComp13(self.data)
+        self.fct_comp_13_dialog.show()
+        self.changedValue.connect(self.fct_comp_13_dialog.refreshResult)
+
+    def open_fct_comp_14(self):
+        if self.fct_comp_14_dialog is not None:
+            self.fct_comp_14_dialog.close()
+        self.fct_comp_14_dialog = AppFctComp14(self.data)
+        self.fct_comp_14_dialog.show()
+        self.changedValue.connect(self.fct_comp_14_dialog.refreshResult)
