@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>fct_fournie_1</class>
- <widget class="QDialog" name="fct_fournie_1">
+ <class>fct_comp_11</class>
+ <widget class="QDialog" name="fct_comp_11">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -15,7 +15,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QTableWidget" name="table_fct_fournie_1">
+    <widget class="QTableWidget" name="table_fct_comp_11">
      <attribute name="horizontalHeaderMinimumSectionSize">
       <number>50</number>
      </attribute>
@@ -66,7 +66,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QLabel" name="label_fct_fournie_1">
+    <widget class="QLabel" name="label_fct_comp_11">
      <property name="text">
       <string/>
      </property>

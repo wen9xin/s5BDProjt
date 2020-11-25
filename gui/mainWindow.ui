@@ -122,7 +122,7 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>12</x>
+      <x>10</x>
       <y>350</y>
       <width>685</width>
       <height>31</height>
@@ -1052,14 +1052,14 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>pushButton_12</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>createDB()</slot>
+   <slot>open_fct_comp_11()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>156</x>
-     <y>85</y>
+     <x>352</x>
+     <y>427</y>
     </hint>
     <hint type="destinationlabel">
      <x>135</x>
@@ -1225,5 +1225,6 @@
   <slot>open_fct_comp_2()</slot>
   <slot>open_fct_comp_3()</slot>
   <slot>open_fct_comp_4()</slot>
+  <slot>open_fct_comp_11()</slot>
  </slots>
 </ui>
