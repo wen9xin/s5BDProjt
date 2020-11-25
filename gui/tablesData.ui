@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>968</width>
-    <height>600</height>
+    <width>966</width>
+    <height>593</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -544,6 +544,120 @@
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="tabVueSpotif">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTableWidget" name="tableSportifs_2">
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>50</number>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>110</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>numSp</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>nomSp</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>prenomSp</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>pays</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>categorieSp</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>dateNaisSp</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ageSp</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_sportifs_2">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>120</red>
+               <green>120</green>
+               <blue>120</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
    <item>
@@ -594,8 +708,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>360</x>
-     <y>575</y>
+     <x>529</x>
+     <y>582</y>
     </hint>
     <hint type="destinationlabel">
      <x>323</x>

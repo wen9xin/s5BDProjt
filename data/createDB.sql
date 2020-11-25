@@ -66,7 +66,7 @@ CREATE TABLE LesDisciplines
 );
 
 CREATE VIEW LesSportifs AS
-SELECT  numSp,nomSp,prenomSp,pays,categorieSp,dateNaisSp,(strftime('%Y', 'now') - strftime('%Y', birthday))AS ageSP
+SELECT  numSp,nomSp,prenomSp,pays,categorieSp,dateNaisSp,(strftime('%Y', 'now') - strftime('%Y', dateNaisSp))AS ageSP
 FROM LesSportifs_base;
 
 CREATE VIEW LesEquipes AS
