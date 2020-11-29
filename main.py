@@ -38,6 +38,8 @@ class AppWindow(QMainWindow):
     fct_comp_13_dialog = None
     fct_comp_21_dialog = None
     fct_comp_22_dialog = None
+    fct_comp_31_dialog = None
+    fct_comp_32_dialog = None
     fct_comp_2_dialog = None
     fct_comp_3_dialog = None
     fct_comp_4_dialog = None
@@ -185,6 +187,20 @@ class AppWindow(QMainWindow):
         self.fct_comp_22_dialog.show()
         self.changedValue.connect(self.fct_comp_22_dialog.refreshResult)
 
+    def open_fct_comp_31(self):
+        if self.fct_comp_31_dialog is not None:
+            self.fct_comp_31_dialog.close()
+        self.fct_comp_31_dialog = AppFctComp31(self.data)
+        self.fct_comp_31_dialog.show()
+        self.changedValue.connect(self.fct_comp_31_dialog.refreshResult)
+
+    def open_fct_comp_32(self):
+        if self.fct_comp_32_dialog is not None:
+            self.fct_comp_32_dialog.close()
+        self.fct_comp_32_dialog = AppFctComp22(self.data)
+        self.fct_comp_32_dialog.show()
+        self.changedValue.connect(self.fct_comp_32_dialog.refreshResult)
+
     # En cas de clic sur la fonction à compléter 2
     def open_fct_comp_2(self):
         if self.fct_comp_2_dialog is not None:
@@ -236,6 +252,10 @@ class AppWindow(QMainWindow):
             self.fct_comp_21_dialog.close()
         if (self.fct_comp_22_dialog is not None):
             self.fct_comp_22_dialog.close()
+        if (self.fct_comp_31_dialog is not None):
+            self.fct_comp_31_dialog.close()
+        if (self.fct_comp_32_dialog is not None):
+            self.fct_comp_32_dialog.close()
         if (self.fct_comp_2_dialog is not None):
             self.fct_comp_2_dialog.close()
         if (self.fct_comp_3_dialog is not None):

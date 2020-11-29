@@ -1015,7 +1015,7 @@
      <x>0</x>
      <y>0</y>
      <width>1384</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFiles">
@@ -1288,6 +1288,38 @@
     <hint type="destinationlabel">
      <x>1269</x>
      <y>860</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_fct_comp_31()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>757</x>
+     <y>969</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1080</x>
+     <y>959</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_fct_comp_32()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>761</x>
+     <y>1004</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1006</x>
+     <y>995</y>
     </hint>
    </hints>
   </connection>

@@ -23,7 +23,7 @@ class AppFctComp22(QDialog):
 
         try:
             cursor = self.data.cursor()
-            result = cursor.execute("SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp) WHERE R1.gold=S.numSp  OR R1.silver=S.numSp OR R1.bronze=S.numSp")
+            result = cursor.execute("SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp) UNION SELECT DISTINCT E.pays ,COUNT(R2.gold) as nbGold, COUNT(R2.silver) as silver, COUNT(R2.bronze) as bronze FROM LesEquipes E LEFT OUTER JOIN LesResultats R2 ON(R2.gold=E.numEq OR R2.silver=E.numEq  OR R2.bronze=E.numEq )")
             
 
         except Exception as e:
