@@ -10,8 +10,8 @@ from actions.action_fct_fournie_1 import AppFctFournie1
 from actions.action_fct_fournie_2 import AppFctFournie2
 from actions.action_fct_comp_1 import AppFctComp1
 from actions.action_fct_comp_11 import AppFctComp11
-#from actions.action_fct_comp_12 import AppFctComp12
-#from actions.action_fct_comp_13 import AppFctComp13
+from actions.action_fct_comp_12 import AppFctComp12
+from actions.action_fct_comp_13 import AppFctComp13
 #from actions.action_fct_comp_14 import AppFctComp14
 from actions.action_fct_comp_2 import AppFctComp2
 from actions.action_fct_comp_3 import AppFctComp3
@@ -153,6 +153,20 @@ class AppWindow(QMainWindow):
         self.fct_comp_11_dialog.show()
         self.changedValue.connect(self.fct_comp_11_dialog.refreshResult)
 
+    def open_fct_comp_12(self):
+        if self.fct_comp_12_dialog is not None:
+            self.fct_comp_12_dialog.close()
+        self.fct_comp_12_dialog = AppFctComp12(self.data)
+        self.fct_comp_12_dialog.show()
+        self.changedValue.connect(self.fct_comp_12_dialog.refreshResult)
+
+    def open_fct_comp_13(self):
+        if self.fct_comp_13_dialog is not None:
+            self.fct_comp_13_dialog.close()
+        self.fct_comp_13_dialog = AppFctComp13(self.data)
+        self.fct_comp_13_dialog.show()
+        self.changedValue.connect(self.fct_comp_13_dialog.refreshResult)
+
     # En cas de clic sur la fonction à compléter 2
     def open_fct_comp_2(self):
         if self.fct_comp_2_dialog is not None:
@@ -200,8 +214,6 @@ class AppWindow(QMainWindow):
             self.fct_comp_12_dialog.close()
         if (self.fct_comp_13_dialog is not None):
             self.fct_comp_13_dialog.close()
-        if (self.fct_comp_14_dialog is not None):
-            self.fct_comp_14_dialog.close()
         if (self.fct_comp_2_dialog is not None):
             self.fct_comp_2_dialog.close()
         if (self.fct_comp_3_dialog is not None):

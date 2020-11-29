@@ -1211,6 +1211,38 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_16</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_fct_comp_12()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_fct_comp_13()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>624</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>693</x>
+     <y>624</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>createDB()</slot>
@@ -1226,5 +1258,7 @@
   <slot>open_fct_comp_3()</slot>
   <slot>open_fct_comp_4()</slot>
   <slot>open_fct_comp_11()</slot>
+  <slot>open_fct_comp_12()</slot>
+  <slot>open_fct_comp_13()</slot>
  </slots>
 </ui>
