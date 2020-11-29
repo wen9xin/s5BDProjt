@@ -23,7 +23,7 @@ class AppFctComp21(QDialog):
 
         try:
             cursor = self.data.cursor()
-            result = cursor.execute("SELECT R.numEp,AVG(S.age) FROM LesResultats R LEFT OUTER JOIN LesEquipiers E ON (R.numEq=E.numEq) LEFT OUTER JOIN LesSportifs S ON(E.numSp=S.numSp) WHERE R.gold>1 GROUP BY R.numEp")
+            result = cursor.execute("SELECT DISTINCT E.numEq,AVG(S.ageSP) FROM LesResultats R LEFT OUTER JOIN LesEquipiers E ON (R.gold=E.numEq) LEFT OUTER JOIN LesSportifs S ON(E.numSp=S.numSp) WHERE R.gold<1000 GROUP BY R.numEp")
             
 
         except Exception as e:

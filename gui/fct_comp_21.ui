@@ -35,7 +35,7 @@
      </column>
      <column>
       <property name="text">
-       <string>nbEquipersEq</string>
+       <string>AVG age</string>
       </property>
      </column>
     </widget>
