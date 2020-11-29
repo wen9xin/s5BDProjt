@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>fct_comp_13</class>
- <widget class="QDialog" name="fct_comp_13">
+ <class>fct_comp_21</class>
+ <widget class="QDialog" name="fct_comp_21">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -15,7 +15,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QTableWidget" name="table_fct_comp_13">
+    <widget class="QTableWidget" name="table_fct_comp_21">
      <attribute name="horizontalHeaderMinimumSectionSize">
       <number>50</number>
      </attribute>
@@ -41,7 +41,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QLabel" name="label_fct_comp_13">
+    <widget class="QLabel" name="label_fct_comp_21">
      <property name="text">
       <string/>
      </property>

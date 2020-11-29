@@ -72,7 +72,7 @@ FROM LesSportifs_base;
 CREATE VIEW LesEquipes AS
 SELECT numEq, COUNT(numSp) as num
 FROM LesEquipiers
-GROUP BY numEp;
+GROUP BY numEq;
 
 -- TODO 1.2a : ajouter la définition de la vue LesSportifs
 -- TODO 1.3a : ajouter la création de la table LesDisciplines et ajouter l'attribut discipline dans la table LesEpreuves

@@ -11,7 +11,7 @@ class AppFctComp13(QDialog):
     # Constructeur
     def __init__(self, data:sqlite3.Connection):
         super(QDialog, self).__init__()
-        self.ui = uic.loadUi("gui/fct_comp_11.ui", self)
+        self.ui = uic.loadUi("gui/fct_comp_13.ui", self)
         self.data = data
         self.refreshResult()
 
@@ -19,16 +19,17 @@ class AppFctComp13(QDialog):
     @pyqtSlot()
     def refreshResult(self):
 
-        display.refreshLabel(self.ui.label_fct_comp_11, "")
+        display.refreshLabel(self.ui.label_fct_comp_13, "")
 
         try:
             cursor = self.data.cursor()
-            result = cursor.execute("SELECT numSP,nomSp, prenomSp, pays, categorieSp,dateNaisSp,ageSp FROM LesSportifs")
+            result = cursor.execute("SELECT numEq, num FROM LesEquipes")
+
 
         except Exception as e:
-            self.ui.table_fct_comp_11.setRowCount(0)
-            display.refreshLabel(self.ui.label_fct_comp_11, "Impossible d'afficher les résultats : " + repr(e))
+            self.ui.table_fct_comp_13.setRowCount(0)
+            display.refreshLabel(self.ui.label_fct_comp_13, "Impossible d'afficher les résultats : " + repr(e))
         else:
-            display.refreshGenericData(self.ui.table_fct_comp_11, result)
+            display.refreshGenericData(self.ui.table_fct_comp_13, result)
 
 

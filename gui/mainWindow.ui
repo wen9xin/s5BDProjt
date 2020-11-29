@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
+    <width>1384</width>
     <height>1052</height>
    </rect>
   </property>
@@ -19,7 +19,7 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>685</width>
+      <width>1341</width>
       <height>16</height>
      </rect>
     </property>
@@ -32,7 +32,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>691</width>
+      <width>1341</width>
       <height>31</height>
      </rect>
     </property>
@@ -54,7 +54,7 @@
      <rect>
       <x>12</x>
       <y>140</y>
-      <width>685</width>
+      <width>1341</width>
       <height>16</height>
      </rect>
     </property>
@@ -65,9 +65,9 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>7</x>
+      <x>10</x>
       <y>150</y>
-      <width>691</width>
+      <width>1341</width>
       <height>31</height>
      </rect>
     </property>
@@ -89,7 +89,7 @@
      <rect>
       <x>12</x>
       <y>260</y>
-      <width>685</width>
+      <width>1341</width>
       <height>16</height>
      </rect>
     </property>
@@ -102,7 +102,7 @@
      <rect>
       <x>7</x>
       <y>269</y>
-      <width>691</width>
+      <width>1341</width>
       <height>31</height>
      </rect>
     </property>
@@ -124,7 +124,7 @@
      <rect>
       <x>10</x>
       <y>350</y>
-      <width>685</width>
+      <width>1341</width>
       <height>31</height>
      </rect>
     </property>
@@ -149,7 +149,7 @@
      <rect>
       <x>40</x>
       <y>430</y>
-      <width>611</width>
+      <width>1311</width>
       <height>51</height>
      </rect>
     </property>
@@ -174,7 +174,7 @@
      <rect>
       <x>0</x>
       <y>550</y>
-      <width>685</width>
+      <width>1341</width>
       <height>31</height>
      </rect>
     </property>
@@ -199,7 +199,7 @@
      <rect>
       <x>12</x>
       <y>772</y>
-      <width>685</width>
+      <width>1341</width>
       <height>16</height>
      </rect>
     </property>
@@ -212,7 +212,7 @@
      <rect>
       <x>12</x>
       <y>781</y>
-      <width>691</width>
+      <width>1341</width>
       <height>31</height>
      </rect>
     </property>
@@ -234,7 +234,7 @@
      <rect>
       <x>10</x>
       <y>880</y>
-      <width>685</width>
+      <width>1331</width>
       <height>16</height>
      </rect>
     </property>
@@ -245,9 +245,9 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>895</y>
-      <width>691</width>
+      <x>20</x>
+      <y>890</y>
+      <width>1321</width>
       <height>21</height>
      </rect>
     </property>
@@ -269,7 +269,7 @@
      <rect>
       <x>12</x>
       <y>990</y>
-      <width>685</width>
+      <width>1331</width>
       <height>16</height>
      </rect>
     </property>
@@ -280,10 +280,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>110</y>
-      <width>691</width>
-      <height>51</height>
+      <width>1351</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -298,7 +298,7 @@
      <rect>
       <x>12</x>
       <y>40</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -383,7 +383,7 @@
      <rect>
       <x>12</x>
       <y>80</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -428,7 +428,7 @@
      <rect>
       <x>12</x>
       <y>180</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -473,7 +473,7 @@
      <rect>
       <x>12</x>
       <y>220</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -518,7 +518,7 @@
      <rect>
       <x>12</x>
       <y>304</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -563,7 +563,7 @@
      <rect>
       <x>12</x>
       <y>649</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -608,7 +608,7 @@
      <rect>
       <x>12</x>
       <y>690</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -653,7 +653,7 @@
      <rect>
       <x>12</x>
       <y>730</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -698,7 +698,7 @@
      <rect>
       <x>12</x>
       <y>810</y>
-      <width>685</width>
+      <width>1331</width>
       <height>32</height>
      </rect>
     </property>
@@ -743,7 +743,7 @@
      <rect>
       <x>12</x>
       <y>850</y>
-      <width>766</width>
+      <width>1331</width>
       <height>32</height>
      </rect>
     </property>
@@ -788,7 +788,7 @@
      <rect>
       <x>10</x>
       <y>920</y>
-      <width>685</width>
+      <width>1331</width>
       <height>32</height>
      </rect>
     </property>
@@ -833,7 +833,7 @@
      <rect>
       <x>10</x>
       <y>960</y>
-      <width>681</width>
+      <width>1331</width>
       <height>32</height>
      </rect>
     </property>
@@ -878,7 +878,7 @@
      <rect>
       <x>10</x>
       <y>390</y>
-      <width>685</width>
+      <width>1341</width>
       <height>32</height>
      </rect>
     </property>
@@ -923,7 +923,7 @@
      <rect>
       <x>0</x>
       <y>490</y>
-      <width>685</width>
+      <width>1351</width>
       <height>32</height>
      </rect>
     </property>
@@ -968,7 +968,7 @@
      <rect>
       <x>0</x>
       <y>590</y>
-      <width>685</width>
+      <width>1351</width>
       <height>32</height>
      </rect>
     </property>
@@ -1014,7 +1014,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>778</width>
+     <width>1384</width>
      <height>22</height>
     </rect>
    </property>
@@ -1058,7 +1058,7 @@
    <slot>open_fct_comp_11()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>352</x>
+     <x>680</x>
      <y>427</y>
     </hint>
     <hint type="destinationlabel">
@@ -1074,7 +1074,7 @@
    <slot>insertDB()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>356</x>
+     <x>684</x>
      <y>85</y>
     </hint>
     <hint type="destinationlabel">
@@ -1090,7 +1090,7 @@
    <slot>deleteDB()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>516</x>
+     <x>1008</x>
      <y>85</y>
     </hint>
     <hint type="destinationlabel">
@@ -1106,7 +1106,7 @@
    <slot>openData()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>463</x>
+     <x>791</x>
      <y>128</y>
     </hint>
     <hint type="destinationlabel">
@@ -1202,7 +1202,7 @@
    <slot>open_fct_comp_4()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>487</x>
+     <x>815</x>
      <y>778</y>
     </hint>
     <hint type="destinationlabel">
@@ -1218,7 +1218,7 @@
    <slot>open_fct_comp_12()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>355</x>
+     <x>688</x>
      <y>525</y>
     </hint>
     <hint type="destinationlabel">
@@ -1234,12 +1234,44 @@
    <slot>open_fct_comp_13()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>351</x>
+     <x>684</x>
      <y>624</y>
     </hint>
     <hint type="destinationlabel">
      <x>693</x>
      <y>624</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>createDB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_fct_comp_21()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>850</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>850</y>
     </hint>
    </hints>
   </connection>
@@ -1260,5 +1292,9 @@
   <slot>open_fct_comp_11()</slot>
   <slot>open_fct_comp_12()</slot>
   <slot>open_fct_comp_13()</slot>
+  <slot>open_fct_comp_21()</slot>
+  <slot>open_fct_comp_22()</slot>
+  <slot>open_fct_comp_31()</slot>
+  <slot>open_fct_comp_32()</slot>
  </slots>
 </ui>
