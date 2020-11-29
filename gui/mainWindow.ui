@@ -1275,6 +1275,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open_fct_comp_22()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>702</x>
+     <y>887</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1269</x>
+     <y>860</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>createDB()</slot>

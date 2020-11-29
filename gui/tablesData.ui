@@ -796,6 +796,11 @@
          <string>nbEquipiers</string>
         </property>
        </column>
+       <column>
+        <property name="text">
+         <string>pays</string>
+        </property>
+       </column>
       </widget>
       <widget class="QLabel" name="label_VueEquipes">
        <property name="geometry">

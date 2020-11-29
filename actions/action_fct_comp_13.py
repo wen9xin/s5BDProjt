@@ -23,7 +23,7 @@ class AppFctComp13(QDialog):
 
         try:
             cursor = self.data.cursor()
-            result = cursor.execute("SELECT numEq, num FROM LesEquipes")
+            result = cursor.execute("SELECT numEq, num,pays FROM LesEquipes")
 
 
         except Exception as e:

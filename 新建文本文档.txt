@@ -1,20 +1,23 @@
-    def open_fct_comp_12(self):
-        if self.fct_comp_12_dialog is not None:
-            self.fct_comp_12_dialog.close()
-        self.fct_comp_12_dialog = AppFctComp12(self.data)
-        self.fct_comp_12_dialog.show()
-        self.changedValue.connect(self.fct_comp_12_dialog.refreshResult)
+SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp) WHERE R1.gold=S.numSp  OR R1.silver=S.numSp OR R1.bronze=S.numSp
 
-    def open_fct_comp_13(self):
-        if self.fct_comp_13_dialog is not None:
-            self.fct_comp_13_dialog.close()
-        self.fct_comp_13_dialog = AppFctComp13(self.data)
-        self.fct_comp_13_dialog.show()
-        self.changedValue.connect(self.fct_comp_13_dialog.refreshResult)
 
-    def open_fct_comp_14(self):
-        if self.fct_comp_14_dialog is not None:
-            self.fct_comp_14_dialog.close()
-        self.fct_comp_14_dialog = AppFctComp14(self.data)
-        self.fct_comp_14_dialog.show()
-        self.changedValue.connect(self.fct_comp_14_dialog.refreshResult)
+SELECT DISTINCT S.pays ,COUNT(R12.gold) as nbGold, COUNT(R12.silver) as silver, COUNT(R13.bronze) as bronze
+FROM LesSportifs S LEFT OUTER JOIN LesResultats R11 ON (R12.gold=S.numSp)
+JOIN LesResultats R12 ON ( R12.silver=S.numSp )
+JOIN LesResultats R13 ON (R13.bronze=S.numSp)
+UNION
+SELECT DISTINCT E.pays ,COUNT(R21.gold) as nbGold, COUNT(R22.silver) as silver, COUNT(R23.bronze) as bronze
+FROM LesEquipes E LEFT OUTER JOIN LesResultats R21 ON(R21.gold=E.numEq ) 
+JOIN LesResultats R22 ON(R22.silver=E.numEq) 
+JOIN LesResultats R23 ON(R23.bronze=E.numEq ) 
+
+
+
+SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze
+FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp)
+WHERE R1.gold=S.numSp 
+OR R1.silver=S.numSp
+OR R1.bronze=S.numSp
+UNION
+SELECT DISTINCT E.pays ,COUNT(R2.gold) as nbGold, COUNT(R2.silver) as silver, COUNT(R2.bronze) as bronze
+FROM LesEquipes E LEFT OUTER JOIN LesResultats R2 ON(R2.gold=E.numEq OR R2.silver=E.numEq  OR R2.bronze=E.numEq )
