@@ -1015,7 +1015,7 @@
      <x>0</x>
      <y>0</y>
      <width>1384</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFiles">
@@ -1298,8 +1298,8 @@
    <slot>open_fct_comp_31()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>757</x>
-     <y>969</y>
+     <x>802</x>
+     <y>968</y>
     </hint>
     <hint type="destinationlabel">
      <x>1080</x>

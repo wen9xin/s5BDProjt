@@ -14,6 +14,8 @@ from actions.action_fct_comp_12 import AppFctComp12
 from actions.action_fct_comp_13 import AppFctComp13
 from actions.action_fct_comp_21 import AppFctComp21
 from actions.action_fct_comp_22 import AppFctComp22
+from actions.action_fct_comp_31 import AppFctComp31
+from actions.action_fct_comp_32 import AppFctComp32
 from actions.action_fct_comp_2 import AppFctComp2
 from actions.action_fct_comp_3 import AppFctComp3
 from actions.action_fct_comp_4 import AppFctComp4
