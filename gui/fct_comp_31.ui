@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>3.1 Gérer les inscriptions à des épreuves</string>
+   <string>3.1</string>
   </property>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
