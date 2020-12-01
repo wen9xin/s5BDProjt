@@ -23,8 +23,11 @@ class AppFctComp22(QDialog):
 
         try:
             cursor = self.data.cursor()
-            result = cursor.execute("SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp) UNION SELECT DISTINCT E.pays ,COUNT(R2.gold) as nbGold, COUNT(R2.silver) as silver, COUNT(R2.bronze) as bronze FROM LesEquipes E LEFT OUTER JOIN LesResultats R2 ON(R2.gold=E.numEq OR R2.silver=E.numEq  OR R2.bronze=E.numEq )")
-            
+            result = cursor.execute("SELECT DISTINCT A.Pays,G.gold,S.silver,B.bronze "
+                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON (A.pays=G.pays)"
+                                    "LEFT OUTER JOIN SilverEtPay S ON (A.pays=S.pays)"
+                                    "LEFT OUTER JOIN BronzeEtPay B ON (A.pays=B.pays) "
+                                    "GROUP BY A.Pays")
 
         except Exception as e:
             self.ui.table_fct_comp_22.setRowCount(0)

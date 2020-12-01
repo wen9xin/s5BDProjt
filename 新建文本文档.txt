@@ -1,23 +1,23 @@
-SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp) WHERE R1.gold=S.numSp  OR R1.silver=S.numSp OR R1.bronze=S.numSp
+("SELECT A.Pays, G.gold,S.silver,B.bronze"
+                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON(A.pays=G.pays)"
+                                    "LEFT OUTER JOIN SilverEtPay S ON (A.pays=S.pays)"
+                                    "LEFT OUTER JOIN BronzeEtPay B ON (A.pays=B.pays)"
+                                    "GROUP BY A.pays")
+
+("SELECT A.Pays as num, G.gold as nbOr ,S.silver as nbArgent,B.bronze as nbBronze"
+                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON(A.pays=G.pays)"
+                                    "LEFT OUTER JOIN SilverEtPay S ON (A.pays=S.pays)"
+                                    "LEFT OUTER JOIN BronzeEtPay B ON (A.pays=B.pays)"
+                                    "GROUP BY A.pays")
+
+("SELECT pays, nbOr ,nbArgent,nbBronze"
+                                    "FROM ResPays")
 
 
-SELECT DISTINCT S.pays ,COUNT(R12.gold) as nbGold, COUNT(R12.silver) as silver, COUNT(R13.bronze) as bronze
-FROM LesSportifs S LEFT OUTER JOIN LesResultats R11 ON (R12.gold=S.numSp)
-JOIN LesResultats R12 ON ( R12.silver=S.numSp )
-JOIN LesResultats R13 ON (R13.bronze=S.numSp)
-UNION
-SELECT DISTINCT E.pays ,COUNT(R21.gold) as nbGold, COUNT(R22.silver) as silver, COUNT(R23.bronze) as bronze
-FROM LesEquipes E LEFT OUTER JOIN LesResultats R21 ON(R21.gold=E.numEq ) 
-JOIN LesResultats R22 ON(R22.silver=E.numEq) 
-JOIN LesResultats R23 ON(R23.bronze=E.numEq ) 
+("SELECT COUNT(R.gold) as gold, I.pays as pays FROM LesResultats R LEFT OUTER JOIN InsEtPay I ON (R.gold=I.pays) GROUP BY pays;")
 
-
-
-SELECT DISTINCT S.pays ,COUNT(R1.gold) as nbGold, COUNT(R1.silver) as silver, COUNT(R1.bronze) as bronze
-FROM LesSportifs S LEFT OUTER JOIN LesResultats R1 ON (R1.gold=S.numSp OR R1.silver=S.numSp OR R1.bronze=S.numSp)
-WHERE R1.gold=S.numSp 
-OR R1.silver=S.numSp
-OR R1.bronze=S.numSp
-UNION
-SELECT DISTINCT E.pays ,COUNT(R2.gold) as nbGold, COUNT(R2.silver) as silver, COUNT(R2.bronze) as bronze
-FROM LesEquipes E LEFT OUTER JOIN LesResultats R2 ON(R2.gold=E.numEq OR R2.silver=E.numEq  OR R2.bronze=E.numEq )
+("SELECT A.Pays as pays, G.gold as nbOr ,S.silver as nbArgent,B.bronze as nbBronze"
+                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON(A.pays=G.pays)"
+                                    "LEFT OUTER JOIN SilverEtPay S ON (G.pays=S.pays)"
+                                    "LEFT OUTER JOIN BronzeEtPay B ON (S.pays=B.pays)"
+                                    "GROUP BY A.pays")

@@ -74,6 +74,34 @@ SELECT DISTINCT E.numEq as numEq, COUNT(E.numSp) as num, S.pays as pays
 FROM LesEquipiers E LEFT OUTER JOIN LesSportifs S ON(E.numSp=S.numSp)
 GROUP BY numEq;
 
+CREATE VIEW InsEtPay AS
+SELECT DISTINCT pays,numSp as num
+FROM LesSportifs
+UNION
+SELECT DISTINCT pays,numEq as num
+FROM LesEquipes;
+
+CREATE VIEW GoldEtPay AS
+SELECT COUNT(R.gold) as gold, I.pays as pays
+FROM LesResultats R LEFT OUTER JOIN InsEtPay I ON (R.gold=I.num)
+GROUP BY pays;
+
+CREATE VIEW SilverEtPay AS
+SELECT COUNT(R.silver) as silver, I.pays as pays
+FROM LesResultats R LEFT OUTER JOIN InsEtPay I ON (R.silver=I.num)
+GROUP BY pays;
+
+CREATE VIEW BronzeEtPay AS
+SELECT COUNT(R.bronze) as bronze, I.pays as pays
+FROM LesResultats R LEFT OUTER JOIN InsEtPay I ON (R.bronze=I.num)
+GROUP BY pays;
+
+CREATE VIEW AllPays AS
+SELECT DISTINCT pays
+FROM LesSportifs_base;
+
+
+
 -- TODO 1.2a : ajouter la définition de la vue LesSportifs
 -- TODO 1.3a : ajouter la création de la table LesDisciplines et ajouter l'attribut discipline dans la table LesEpreuves
 -- TODO 1.4a : ajouter la définition de la vue LesEquipes
