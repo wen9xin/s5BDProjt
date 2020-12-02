@@ -41,6 +41,6 @@ class AppFctComp31(QDialog):
         except Exception as e:
             display.refreshLabel(self.ui.label_fct_comp_31, "Impossible d'ajouter  : " + repr(e))
         else:
-            display.refreshLabel(self.label_fct_comp_31, "Une ligne a été inséré dans la base avec succès.")
+            display.refreshLabel(self.label_fct_comp_31, "Une ligne a été supprime dans la base avec succès.")
             self.data.commit()
             # On émet le signal indiquant la modification de la table
