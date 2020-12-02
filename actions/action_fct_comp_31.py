@@ -24,7 +24,8 @@ class AppFctComp31(QDialog):
 
         display.refreshLabel(self.ui.label_fct_comp_31, "")
         try:
-            db.updateDBfile(self.data, "INSERT INTO LesInscriptions (numIn, numEp) VALUES (?, ?) ", [self.ui.lineEdit_31_a_in.text().strip()],[self.ui.lineEdit_31_a_ep.text().strip()])
+            cursor = self.data.cursor()
+            result = cursor.execute(self.data, "INSERT INTO LesInscriptions (numIn, numEp) VALUES (?, ?) ", [self.ui.lineEdit_31_a_in.text().strip()],[self.ui.lineEdit_31_a_ep.text().strip()])
         except Exception as e:
             display.refreshLabel(self.ui.label_fct_comp_31, "Impossible d'ajouter  : " + repr(e))
         else:
