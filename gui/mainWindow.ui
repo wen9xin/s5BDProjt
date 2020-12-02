@@ -537,9 +537,9 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_13">
+      <widget class="QPushButton" name="pushButton_6">
        <property name="text">
-        <string>3.1 Gérer les inscriptions à des épreuves</string>
+        <string>1.1 Ajouter dateNaisSp dans l'affichage des sportifs d'une équipe</string>
        </property>
       </widget>
      </item>
@@ -788,7 +788,7 @@
      <rect>
       <x>10</x>
       <y>920</y>
-      <width>691</width>
+      <width>834</width>
       <height>32</height>
      </rect>
     </property>
@@ -807,9 +807,9 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="pushButton_13">
        <property name="text">
-        <string>1.1 Ajouter dateNaisSp dans l'affichage des sportifs d'une équipe</string>
+        <string>3.1 Gérer les inscriptions à des épreuves</string>
        </property>
       </widget>
      </item>
