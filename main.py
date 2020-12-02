@@ -199,7 +199,7 @@ class AppWindow(QMainWindow):
     def open_fct_comp_32(self):
         if self.fct_comp_32_dialog is not None:
             self.fct_comp_32_dialog.close()
-        self.fct_comp_32_dialog = AppFctComp22(self.data)
+        self.fct_comp_32_dialog = AppFctComp32(self.data)
         self.fct_comp_32_dialog.show()
         self.changedValue.connect(self.fct_comp_32_dialog.refreshResult)
 

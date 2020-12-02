@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>699</width>
-    <height>451</height>
+    <width>796</width>
+    <height>588</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QLabel" name="label_fct_comp_31">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>229</y>
-     <width>16</width>
-     <height>16</height>
+     <x>21</x>
+     <y>9</y>
+     <width>691</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -29,59 +29,49 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>20</y>
-     <width>42</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Ajouter</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>671</width>
-     <height>201</height>
+     <y>90</y>
+     <width>611</width>
+     <height>291</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" rowspan="2">
-     <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Saisissez un numéro d'epreuve:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Saisissez un numéro d'inscriptions:</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Saisissez un numéro d'inscriptions:</string>
+      </property>
+     </widget>
     </item>
     <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit__31_a_in"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Saisissez un numéro d'epreuve:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
      <widget class="QLineEdit" name="lineEdit_31_a_ep"/>
     </item>
-    <item row="0" column="2" rowspan="2">
+    <item row="2" column="1">
      <widget class="QPushButton" name="pushButton">
       <property name="text">
        <string>Ajouter</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit__31_a_in"/>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -95,8 +85,8 @@
    <slot>refreshResult()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>689</x>
-     <y>169</y>
+     <x>669</x>
+     <y>325</y>
     </hint>
     <hint type="destinationlabel">
      <x>91</x>
@@ -111,8 +101,8 @@
    <slot>Ajouter()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>666</x>
-     <y>161</y>
+     <x>669</x>
+     <y>325</y>
     </hint>
     <hint type="destinationlabel">
      <x>551</x>
@@ -120,9 +110,42 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_comp_31</receiver>
+   <slot>refreshResult()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>fct_comp_31</receiver>
+   <slot>Suppr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>320</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>refreshResult()</slot>
   <slot>Ajouter()</slot>
+  <slot>Suppr()</slot>
  </slots>
 </ui>

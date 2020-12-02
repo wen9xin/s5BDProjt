@@ -1,23 +1,15 @@
-("SELECT A.Pays, G.gold,S.silver,B.bronze"
-                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON(A.pays=G.pays)"
-                                    "LEFT OUTER JOIN SilverEtPay S ON (A.pays=S.pays)"
-                                    "LEFT OUTER JOIN BronzeEtPay B ON (A.pays=B.pays)"
-                                    "GROUP BY A.pays")
+        if not self.ui.a_ep.text().strip() or not self.ui.a_in.text().strip():
+            display.refreshLabel(self.ui.label_fct_comp_31, "Veuillez indiquer les numéro")
+        else:
+            '''
+            try:
+                db.updateDBfile(self.data, "INSERT INTO LesInscriptions (numIn, numEp) VALUES (?, ?) ", [self.ui.lineEdit_31_a_in.text().strip()],[self.ui.lineEdit_31_a_ep.text().strip()])
+            except Exception as e:
+                display.refreshLabel(self.ui.label_fct_comp_31, "Impossible d'ajouter  : " + repr(e))
+            else:
+                display.refreshLabel(self.label_fct_comp_31, "Une ligne a été inséré dans la base avec succès.")
+                self.data.commit()
+                # On émet le signal indiquant la modification de la table
+                self.changedValue.emit()
+'''
 
-("SELECT A.Pays as num, G.gold as nbOr ,S.silver as nbArgent,B.bronze as nbBronze"
-                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON(A.pays=G.pays)"
-                                    "LEFT OUTER JOIN SilverEtPay S ON (A.pays=S.pays)"
-                                    "LEFT OUTER JOIN BronzeEtPay B ON (A.pays=B.pays)"
-                                    "GROUP BY A.pays")
-
-("SELECT pays, nbOr ,nbArgent,nbBronze"
-                                    "FROM ResPays")
-
-
-("SELECT COUNT(R.gold) as gold, I.pays as pays FROM LesResultats R LEFT OUTER JOIN InsEtPay I ON (R.gold=I.pays) GROUP BY pays;")
-
-("SELECT A.Pays as pays, G.gold as nbOr ,S.silver as nbArgent,B.bronze as nbBronze"
-                                    "FROM AllPays A LEFT OUTER JOIN GoldEtPay G ON(A.pays=G.pays)"
-                                    "LEFT OUTER JOIN SilverEtPay S ON (G.pays=S.pays)"
-                                    "LEFT OUTER JOIN BronzeEtPay B ON (S.pays=B.pays)"
-                                    "GROUP BY A.pays")
