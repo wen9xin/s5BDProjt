@@ -47,7 +47,7 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineEdit__31_a_in"/>
+     <widget class="QLineEdit" name="lineEdit_31_a_in"/>
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="label_2">

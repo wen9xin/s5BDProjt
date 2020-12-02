@@ -13,26 +13,13 @@
   <property name="windowTitle">
    <string>3.2</string>
   </property>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>682</x>
-     <y>9</y>
-     <width>42</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Ajouter</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_fct_comp_32">
    <property name="geometry">
     <rect>
      <x>9</x>
      <y>9</y>
-     <width>16</width>
-     <height>16</height>
+     <width>461</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -42,7 +29,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -60,7 +47,7 @@
      </widget>
     </item>
     <item row="0" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit__32_g"/>
+     <widget class="QLineEdit" name="lineEdit_32_g"/>
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="label_6">
@@ -70,7 +57,7 @@
      </widget>
     </item>
     <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit__32_b"/>
+     <widget class="QLineEdit" name="lineEdit_32_b"/>
     </item>
     <item row="2" column="0" colspan="2">
      <widget class="QLabel" name="label_5">
@@ -80,7 +67,7 @@
      </widget>
     </item>
     <item row="2" column="2">
-     <widget class="QLineEdit" name="lineEdit__32_a"/>
+     <widget class="QLineEdit" name="lineEdit_32_a"/>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="label_2">
@@ -111,8 +98,8 @@
    <slot>refreshResult()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>669</x>
-     <y>325</y>
+     <x>629</x>
+     <y>383</y>
     </hint>
     <hint type="destinationlabel">
      <x>91</x>
@@ -127,8 +114,8 @@
    <slot>Ajouter()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>669</x>
-     <y>325</y>
+     <x>629</x>
+     <y>383</y>
     </hint>
     <hint type="destinationlabel">
      <x>551</x>
@@ -140,6 +127,5 @@
  <slots>
   <slot>refreshResult()</slot>
   <slot>Ajouter()</slot>
-  <slot>suppr()</slot>
  </slots>
 </ui>

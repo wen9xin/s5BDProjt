@@ -38,9 +38,11 @@ class AppFctComp31(QDialog):
 
         display.refreshLabel(self.ui.label_fct_comp_31, "")
         try:
-            db.updateDBfile(self.data, "DELETE FROM LesInscriptions WHERE numIn= ?  AND numEp= ? ) ",[self.ui.lineEdit_31_a_in.text().strip()],[self.ui.lineEdit_31_a_ep.text().strip()])
+            cursor = self.data.cursor()
+            result = cursor.execute("DELETE FROM LesInscriptions WHERE numIn=? AND numEp=? ",
+                                    [self.ui.lineEdit_31_a_in.text().strip(), self.ui.lineEdit_31_a_ep.text().strip()])
         except Exception as e:
-            display.refreshLabel(self.ui.label_fct_comp_31, "Impossible d'ajouter  : " + repr(e))
+            display.refreshLabel(self.ui.label_fct_comp_31, "Impossible de supprimer  : " + repr(e))
         else:
             display.refreshLabel(self.label_fct_comp_31, "Une ligne a été supprime dans la base avec succès.")
             self.data.commit()
